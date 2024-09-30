@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFEB3B"
+        android:gravity="center"
+        android:padding="20dp"
+        >
+
+        <Button
+            android:id="@+id/btnSaludar01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Otra Pantalla" />
+
+        <Button
+            android:id="@+id/btnSaludar02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings" />
+
+        <Button
+            android:id="@+id/btnSaludar03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My profile" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="557dp"
+        android:background="#4CAF50"
+        android:orientation="vertical"
+        android:padding="60dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFEB3B"
+        android:gravity="center"
+        android:padding="20dp"
+        >
+
+        <Button
+            android:id="@+id/btnSaludar04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Otra Pantalla" />
+
+        <Button
+            android:id="@+id/btnSaludar05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings" />
+
+        <Button
+            android:id="@+id/btnSaludar06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My profile" />
+
+    </LinearLayout>
+
+</LinearLayout>
