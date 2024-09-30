@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos EONET</title>
+    <link rel="icon" href="/img/NASAlogo.png" type="image/x-icon">
+    <!-- CSS de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css">
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="/img/NASAlogo.png" class="logo">
+        <h1>NASA EONET</h1>
+    </header>
+
+    <div class="container">
+        <form id="dateForm">
+            <label for="startDate">Fecha de inicio:</label>
+            <input type="date" id="startDate" name="startDate" required>
+            <label for="endDate">Fecha de fin:</label>
+            <input type="date" id="endDate" name="endDate" required>
+            <button type="submit">Filtrar</button>
+        </form>
+    </div>
+    
+
+    <div class="contMapa">
+        <div id="map"></div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>Email: a27654@svalero.com</p>
+                <p>Tel: (555) 123-4567</p>
+            </div>
+
+                <p>&copy; 2024 NASA EONET</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
