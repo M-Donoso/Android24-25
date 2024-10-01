@@ -1,5 +1,6 @@
 package com.svalero.themoviedb_001.json_mapper;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MovieResponse {
@@ -7,11 +8,8 @@ public class MovieResponse {
 
     private List<Movie> results;
 
-    // Getters y Setters aquí
-
-
     public List<Movie> getResults() {
-        return results;
+        return results != null ? results : new ArrayList<>(); // Return empty list if null
     }
 
     public void setResults(List<Movie> results) {
