@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Productos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Logo de la app -->
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Barra de búsqueda -->
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Buscar por Liga o Equipo"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <!-- Botones de filtro -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnFilterByTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Por Equipo"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/dark_orange"
+            android:textColor="@android:color/white"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnFilterByLeague"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Por Liga"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/dark_orange"
+            android:textColor="@android:color/white"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnTopVendidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top 10 Más Vendidas"
+            android:backgroundTint="@color/dark_orange"
+            android:textColor="@android:color/white"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- RecyclerView para la lista de productos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProducts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:padding="8dp" />
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/light_gray">
+
+    <!-- Fondo decorativo -->
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="0.2" />
+
+    <!-- Contenedor principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/rounded_corners"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <!-- Logo de la aplicación -->
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Título de bienvenida -->
+        <TextView
+            android:id="@+id/tvWelcomeMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido"
+            android:textSize="24sp"
+            android:textColor="@color/dark_orange"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Subtítulo -->
+        <TextView
+            android:id="@+id/tvSubMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explora los mejores productos y gestiona tu cuenta con facilidad."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botón Ver Productos -->
+        <Button
+            android:id="@+id/btnGoToProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Productos"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/dark_orange"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textStyle="bold" />
+
+        <!-- Botón Cerrar Sesión -->
+        <Button
+            android:id="@+id/btnHistorialCompras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/dark_orange"
+            android:padding="12dp"
+            android:text="Historial de Compras"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesión"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
+
+
+
